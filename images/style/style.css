@@ -1,0 +1,180 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+@import url(https://fonts.google.com/specimen/Open+Sans);
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1.4;
+  background-color: #674baf;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 400px) {
+  body {
+    background-image: url(/images/bg-desktop.svg);
+    background-position: left center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 800px) {
+  .flex-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .flex-box .logo {
+    display: block;
+  }
+  .flex-box .second-box {
+    text-align: left;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .flex-box .second-box .btn {
+    padding: 1em 4.5em;
+  }
+  .footer {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .footer .icon-last {
+    margin-right: 3em;
+  }
+}
+
+.logo {
+  width: Min(200px, 60%);
+  margin: 3em 1.9em;
+}
+
+.flex-box {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.flex-box .first-box {
+  padding: 2em;
+}
+
+.flex-box .second-box {
+  width: Min(730px, 100%);
+  text-align: center;
+  padding: 2em;
+}
+
+.flex-box .second-box p {
+  margin-bottom: 2.5em;
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+}
+
+.flex-box .second-box .btn {
+  background-color: white;
+  padding: 0.7em 4.5em;
+  border-radius: 28px;
+  text-decoration: none;
+  color: #674baf;
+}
+
+.flex-box .second-box .btn:hover {
+  background-color: #e882e8;
+  color: #fff;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em 0;
+}
+
+.footer .icon {
+  margin-left: 1em;
+}
+
+.icon-clr {
+  color: #fff;
+  background-color: #674baf;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 23px;
+}
+
+.icon-clr:hover {
+  color: #e882e8;
+}
+
+.fa-facebook-f {
+  padding: 5px 9px;
+}
+
+@media (min-width: 400px) {
+  body {
+    background-image: url(bg-desktop.svg);
+    background-position: left center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 800px) {
+  .flex-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .flex-box .logo {
+    display: block;
+  }
+  .flex-box .second-box {
+    text-align: left;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .flex-box .second-box .btn {
+    padding: 1em 4.5em;
+  }
+  .footer {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .footer .icon-last {
+    margin-right: 3em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
